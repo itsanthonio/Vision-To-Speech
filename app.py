@@ -52,7 +52,8 @@ def save_audio(twi_caption, audio_path):
         logging.error(f"Failed to save audio file: {e}")
 
 # Streamlit code for uploading and processing the image
-st.title("VerMa Captioning and Translation Webpage")
+st.title("VeMa Twi Translator")
+st.title("Vision To Speech")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
