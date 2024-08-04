@@ -1,5 +1,5 @@
 streamlit==1.24.1
-torch==2.0.1
+torch>=2.1
 gtts==2.3.0
 Pillow<10,>=6.2.0
 TTS==0.20.6
