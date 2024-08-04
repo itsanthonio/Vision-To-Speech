@@ -1,3 +1,4 @@
+import logging
 import streamlit as st
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
@@ -5,7 +6,6 @@ from gtts import gTTS
 from TTS.api import TTS
 import os
 import requests
-import logging
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -32,15 +32,12 @@ def generate_english_caption(image_file):
 # Define the function to translate text to Twi
 def translate(text, target_language):
     try:
-        ngrok_url = "https://9482-41-79-97-5.ngrok-free.app"  # Use the URL provided by ngrok
+        ngrok_url = "https://9482-41-79-97-5.ngrok-free.app"
         url = f"{ngrok_url}/translate"
         headers = {"Content-Type": "application/json"}
-        data = {
-            "text": text,
-            "to": target_language
-        }
+        data = {"text": text, "to": target_language}
         response = requests.post(url, headers=headers, json=data)
-        response.raise_for_status()  # Raises HTTPError for bad responses
+        response.raise_for_status()
         response_json = response.json()
         return response_json.get("translatedText", "Translation result not found")
     except requests.RequestException as e:
