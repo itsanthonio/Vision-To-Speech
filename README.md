@@ -61,5 +61,5 @@ To deploy our application on a cloud platform, follow these steps:
     o	The application will generate an English caption, translate it to Twi, and produce an audio output of the Twi 
       caption.
 
-By following these steps, users can easily deploy and run VeMa Translator on their local machines, enhancing accessibility and communication for Twi speakers and the visually impaired.
+
 
