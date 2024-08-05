@@ -15,7 +15,9 @@ The significance of VeMa Twi Translator lies in its ability to bridge the commun
 We chose the vision to speech approach because it offers a comprehensive solution for accessibility. By converting visual information into audio, our application caters to individuals who rely on auditory inputs. This method ensures that users can understand visual content without needing to see it.
 
 
-**How It Works**
+**How It Works** 
+
+**LINK TO YOUTUBE VIDEO:** https://youtu.be/FM4RBC3juc0
 
 1.	Image Upload: Users can upload images in formats like JPEG or JPG. The acceptable formats are clearly specified on the upload interface.
 2.	English Caption Generation: Once the image is uploaded, the application uses a pretrained model to generate an accurate English caption.
